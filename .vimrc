@@ -1,6 +1,7 @@
 " remove vi compatibility
 set nocompatible
 
+
 filetype plugin on
 
 set foldmethod=indent
@@ -35,3 +36,7 @@ set wildignore=*.0,*~,*.pyc
 set wildignore+=*/.git
 set showmatch
 
+" line numbers
+set number
+highlight LineNr ctermfg=darkgrey
+set cursorline
