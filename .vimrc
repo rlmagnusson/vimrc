@@ -26,8 +26,15 @@ set smartindent
 map æ ^
 inoremap jj <esc>
 inoremap jz <esc>ZZ
+" scroll with CTRL + arrows
+nnoremap <C-Down> <C-E>
+nnoremap <C-Up> <C-Y>
 " QOL
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
+
+" editing
+nnoremap <S-Up> ddkP
+nnoremap <S-Down> ddp
 
 " gui
 set laststatus=2
