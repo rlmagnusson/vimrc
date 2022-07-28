@@ -4,8 +4,10 @@ set nocompatible
 
 filetype plugin on
 
+" Folding
+nnoremap <space> za
 set foldmethod=indent
-set foldlevelstart=1
+set foldlevelstart=3
 " XML folding
 "augroup XML
 "    autocmd!
@@ -26,6 +28,8 @@ set smartindent
 map æ ^
 inoremap jj <esc>
 inoremap jz <esc>ZZ
+" inoremap jw <esc>:update<cr>i
+inoremap jw <esc>:w<cr>
 " scroll with CTRL + arrows
 nnoremap <C-Down> <C-E>
 nnoremap <C-Up> <C-Y>
